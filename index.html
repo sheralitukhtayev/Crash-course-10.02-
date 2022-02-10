@@ -17,18 +17,20 @@
         <a href="#" class="logo">Shoe<span>Brand</span></a>
 
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sneakers</a></li>
-            <li><a href="#">Players</a></li>
-          </ul>
 
           <svg class="close" width="48" height="32" viewBox="0 0 48 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
           </svg>
 
 
-      </nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Players</a></li>
+          </ul>
+
+
+        </nav>
       </header>
 
       <section class="hero">
@@ -42,28 +44,37 @@
       </section>
 
       <section class="more-info">
-        <div class="faeture">
+        <div class="feature">
           <div class="content">
             <p class="title">Lightweight</p>
-            <p class="title">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+            <p class="desk">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
           </div>
           <img src="img/second.jpg" alt="Another shoe">
         </div>
-        <div class="faeture left">
+        <div class="feature left">
           <div class="content">
             <p class="title">Flexibility</p>
-            <p class="title">Soft, flexible soles will allow the walker to push off easly with each step.</p>
+            <p class="desk">Soft, flexible soles will allow the walker to push off easly with each step.</p>
           </div>
           <img src="img/third.jpg" alt="Another shoe">
         </div>
-        <div class="faeture">
+        <div class="feature">
           <div class="content">
             <p class="title">Durability</p>
-            <p class="title">Lightweight, woven material  is durable and provide structure and support.</p>
+            <p class="desk">Lightweight, woven material  is durable and provide structure and support.</p>
           </div>
           <img src="img/fourth-2.jpg" alt="Another shoe">
         </div>
       </section>
     </div>
+    <script>
+      const menu = document.querySelector('.menu')
+      const close = document.querySelector('.close')
+      const nav = document.querySelector('nav')
+
+      menu.addEventListener('click', () => {
+        nav.classList.add('open-nav')
+      })
+    </script>
   </body>
 </html>
